@@ -6983,7 +6983,7 @@ MonoBehaviour:
   deceleration: 8
   acceleration: 8
   velPower: 8
-  jumpingPower: 10
+  jumpingPower: 13
   jumpingMultiplier: 2
   gravityMultiplier: 0
   rb: {fileID: 1188903528}
@@ -8455,7 +8455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523174394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.5087967, y: -4.84, z: 0}
+  m_LocalPosition: {x: 19.89, y: 0.06, z: 0}
   m_LocalScale: {x: 3.6098325, y: 3.6098325, z: 3.6098323}
   m_ConstrainProportionsScale: 0
   m_Children: []
