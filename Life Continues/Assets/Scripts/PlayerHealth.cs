@@ -76,6 +76,7 @@ private void Update()
         {
             Debug.Log("damage");
             Health -= 1;
+            FindObjectOfType<AudioManager>().Play("Morte");
         }
 
     //    if (collision.gameObject.CompareTag("acidDMG") && acidResistance == false)
@@ -88,11 +89,13 @@ private void Update()
         {
             Debug.Log("damage");
             Health -= 1;
+            FindObjectOfType<AudioManager>().Play("Morte");
         }
          if (collision.gameObject.CompareTag("acidDMG") && acidResistance == true)
         {
             Debug.Log("esta gamer?");
             Destroy(collision.gameObject);
+            FindObjectOfType<AudioManager>().Play("Quebrar");
         }
     }
 }

@@ -70,11 +70,13 @@ public class PlayerMoviment : MonoBehaviour
         if (Input.GetButtonDown("Jump") && jumpBufferTokens)
         {
             jumpBufferCounter = jumpBufferTime;
-            jumpBufferTokens = false;
+            jumpBufferTokens = false; 
+            
         }
         else
         {
             jumpBufferCounter -= Time.deltaTime;
+            
         }
 
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f && !isJumping)
@@ -85,6 +87,7 @@ public class PlayerMoviment : MonoBehaviour
             jumpBufferCounter = 0f;
 
             StartCoroutine(JumpCooldown());
+            FindObjectOfType<AudioManager>().Play("Pular");
         }
 
         if (jumpKeyUp && rb.velocity.y > 0)
@@ -98,7 +101,10 @@ public class PlayerMoviment : MonoBehaviour
             rb.AddForce(Vector2.up * (jumpingPower * jumpingMultiplier), ForceMode2D.Impulse);
 
             coyoteTimeCounter = 0f;
+
         }
+        
+
 
         Flip();
     }
@@ -127,6 +133,7 @@ public class PlayerMoviment : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        
     }
 
     private void Flip()

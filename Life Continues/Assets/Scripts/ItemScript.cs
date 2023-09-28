@@ -67,12 +67,14 @@ public class ItemScript : MonoBehaviour
             {
 
                 SceneManager.LoadScene("cena1");
-            }
+            FindObjectOfType<AudioManager>().Play("Morte");
+        }
             if (col.CompareTag("Voides") == true)
             {
 
                 SceneManager.LoadScene("cena1");
-            }
+            FindObjectOfType<AudioManager>().Play("Morte");
+        }
           
            if (col.CompareTag("Porta"))
            {
