@@ -11791,10 +11791,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee1f8ccdfc1c764bae78a67fe14a825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  deceleration: 8
-  acceleration: 8
-  velPower: 8
+  speed: 10
+  deceleration: 15
+  acceleration: 25
+  velPower: 1
   jumpingPower: 13
   jumpingMultiplier: 2
   gravityMultiplier: 0

@@ -117,7 +117,7 @@ public class PlayerMoviment : MonoBehaviour
     private void Run()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+       
 
 
         float targetSpeed = moveInput * speed;
