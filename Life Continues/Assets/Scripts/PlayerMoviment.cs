@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMoviment : MonoBehaviour
 {
+    public ParticleSystem DustParticle;
 
     private float moveInput;
     public float speed = 8f;
@@ -86,6 +87,8 @@ public class PlayerMoviment : MonoBehaviour
 
             jumpBufferCounter = 0f;
 
+            ReleaseDust();
+
             StartCoroutine(JumpCooldown());
             FindObjectOfType<AudioManager>().Play("Pular");
         }
@@ -102,6 +105,8 @@ public class PlayerMoviment : MonoBehaviour
 
             coyoteTimeCounter = 0f;
 
+            
+
         }
         
 
@@ -112,6 +117,11 @@ public class PlayerMoviment : MonoBehaviour
     private void FixedUpdate()
     {
         Run();
+    }
+
+    void ReleaseDust()
+    {
+        DustParticle.Play();
     }
 
     private void Run()
@@ -144,6 +154,10 @@ public class PlayerMoviment : MonoBehaviour
             isFacingRight = !isFacingRight;
             localScale.x *= -1f;
             transform.localScale = localScale;
+            if (IsGrounded())
+            {
+                ReleaseDust();
+            }
         }
     }
 
