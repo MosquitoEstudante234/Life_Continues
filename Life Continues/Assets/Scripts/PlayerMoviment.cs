@@ -56,7 +56,7 @@ public class PlayerMoviment : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (rb.velocity.y < 1)
+        if (rb.velocity.y < 1 && !IsGrounded())
         {
             rb.gravityScale = normalGravity + (gravityMultiplier += Time.deltaTime * 5);
         }
