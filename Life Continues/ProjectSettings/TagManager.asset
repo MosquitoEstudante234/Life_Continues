@@ -18,6 +18,7 @@ TagManager:
   - acidFruit
   - StatusRemover
   - Trofeu
+  - Ground
   layers:
   - Default
   - TransparentFX

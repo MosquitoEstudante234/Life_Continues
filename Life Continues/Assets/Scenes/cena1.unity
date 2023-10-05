@@ -566,7 +566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47484506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -138.90001, y: 0, z: 0}
   m_LocalScale: {x: 2.393, y: 2.393, z: 2.393}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18196,7 +18196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523174394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.89, y: 0.06, z: 0}
+  m_LocalPosition: {x: -94.41, y: 0.06, z: 0}
   m_LocalScale: {x: 3.6098325, y: 3.6098325, z: 3.6098323}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18609,7 +18609,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614897390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -61.43, y: -5.6289997, z: 0}
+  m_LocalPosition: {x: -216.18002, y: -5.6289997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19086,7 +19086,7 @@ GameObject:
   m_Layer: 0
   m_Name: StatusRemover
   m_TagString: StatusRemover
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -20494,9 +20494,10 @@ GameObject:
   - component: {fileID: 1961537106}
   - component: {fileID: 1961537108}
   - component: {fileID: 1961537107}
-  m_Layer: 0
+  - component: {fileID: 1961537109}
+  m_Layer: 6
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20602,19 +20603,19 @@ Tilemap:
       e03: -3.8750038
       e10: 0
       e11: 0
-      e12: 8.27e-43
-      e13: 8.27e-43
-      e20: 0.71045685
+      e12: 8.79e-43
+      e13: 8.79e-43
+      e20: 3.6761564e-32
       e21: 1e-45
-      e22: 5.573569e-29
-      e23: 3.834259e+19
+      e22: 6.0116603e-29
+      e23: 8.870576e+9
       e30: 4.5905e-41
       e31: 0
-      e32: 8.28e-43
-      e33: 8.31e-43
+      e32: 8.8e-43
+      e33: 8.83e-43
   m_TileColorArray:
   - m_RefCount: 0
-    m_Data: {r: 3.6748e-41, g: 3.6748e-41, b: 3.6748e-41, a: 3.6748e-41}
+    m_Data: {r: 3.6268e-41, g: 3.6268e-41, b: 3.6268e-41, a: 3.6268e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20639,6 +20640,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1961537109
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961537105}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
 --- !u!1 &1970808276
 GameObject:
   m_ObjectHideFlags: 3
@@ -20811,7 +20828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991516533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.849998, y: 2.4500003, z: 0}
+  m_LocalPosition: {x: -182.6, y: 2.4500003, z: 0}
   m_LocalScale: {x: 7.558404, y: 8.997197, z: 33.744503}
   m_ConstrainProportionsScale: 0
   m_Children: []
