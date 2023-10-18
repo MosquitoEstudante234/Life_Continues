@@ -14,8 +14,8 @@ public class ItemScript : MonoBehaviour
     private int scoremax = 3;
     private GameObject currentTeleporter;
     public static int level = 0;
-
-
+    public Vector3 RespawnPoint;
+    public GameObject PortaFinal;
 
 
 
@@ -25,6 +25,7 @@ public class ItemScript : MonoBehaviour
         score = 0;
         scorecomp = 3;
         trues = true;
+        RespawnPoint = transform.position;
     }
 
     // rato gordo gang gang
@@ -47,6 +48,10 @@ public class ItemScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene("cena1");
+        }
+        if (score == 3)
+        {
+           Destroy(PortaFinal);
         }
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -72,7 +77,7 @@ public class ItemScript : MonoBehaviour
             if (col.CompareTag("Voides") == true)
             {
 
-                SceneManager.LoadScene("cena1");
+                transform.position = RespawnPoint;
             FindObjectOfType<AudioManager>().Play("Morte");
         }
           
@@ -88,8 +93,14 @@ public class ItemScript : MonoBehaviour
          if (col.CompareTag("Trofeu") == true)
             {
 
-                SceneManager.LoadScene("cena1");
+                SceneManager.LoadScene("cena0");
             }
+            if (col.CompareTag("CheckPoint") == true)
+        {
+            RespawnPoint = transform.position;
+            
+        }
+        
     }
 
      private void OnTriggerExit2D(Collider2D col)

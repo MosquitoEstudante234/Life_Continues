@@ -29,7 +29,9 @@ private void Update()
     {
         if (Health == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+          //  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            transform.position = GetComponent<ItemScript>().RespawnPoint;
+            Health ++;
         }
 
     }
