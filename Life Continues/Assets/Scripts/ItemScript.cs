@@ -38,11 +38,11 @@ public class ItemScript : MonoBehaviour
         }
        if (Input.GetKeyDown(KeyCode.E))
        {
-         if (currentTeleporter != null && passagem == true && score == scoremax)
+         if (currentTeleporter != null && score >= 1)
          {
             transform.position = currentTeleporter.GetComponent<Teleporter>().GetDestination().position;
-                level++;
-                SavePlayer();
+             //   level++;
+               // SavePlayer();
          }
        }
         if (Input.GetKeyDown(KeyCode.R))
