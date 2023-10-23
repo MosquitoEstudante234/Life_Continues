@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FrutasDeleite : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float speed = 2f;
     public float height = 0.05f;
     public float startY = 3.25f;

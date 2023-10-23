@@ -5,15 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-
-
-
- 
-
     int Health = 1;
-    public static bool fireResistance = false;
-    public static bool iceResistance = false;
-    public static bool acidResistance = false;
+    [SerializeField] public static bool fireResistance = false;
+    [SerializeField] public static bool iceResistance = false;
+    [SerializeField] public static bool acidResistance = false;
 
     private void Start()
     {
@@ -23,20 +18,6 @@ public class PlayerHealth : MonoBehaviour
      acidResistance = false;
 
 }
-
-
-private void Update()
-    {
-        if (Health == 0)
-        {
-          //  SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            transform.position = GetComponent<ItemScript>().RespawnPoint;
-            Health ++;
-        }
-
-    }
-
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("fireFruit"))
@@ -64,9 +45,35 @@ private void Update()
             fireResistance = false;
             iceResistance = false;
             acidResistance = false;
-        } 
-    }
+        }
 
+
+
+        //caso de errado deleta até as chaves da função.
+
+
+
+        if (collision.gameObject.CompareTag("FireDMG") && fireResistance == false)
+        {
+            Debug.Log("damage");
+            Health -= 1;
+            FindObjectOfType<AudioManager>().Play("Morte");
+        }
+
+        if (collision.gameObject.CompareTag("iceDMG") && iceResistance == false)
+        {
+            Debug.Log("damage");
+            Health -= 1;
+            FindObjectOfType<AudioManager>().Play("Morte");
+        }
+        if (collision.gameObject.CompareTag("acidDMG") && acidResistance == true)
+        {
+            Debug.Log("esta gamer?");
+            Destroy(collision.gameObject);
+            FindObjectOfType<AudioManager>().Play("Quebrar");
+        }
+    }
+    //essa em ciminha
 
 
 
@@ -80,12 +87,6 @@ private void Update()
             Health -= 1;
             FindObjectOfType<AudioManager>().Play("Morte");
         }
-
-    //    if (collision.gameObject.CompareTag("acidDMG") && acidResistance == false)
-    //    {
-       //     Debug.Log("damage");
-       //     Health -= 1;
-     //   }
 
         if (collision.gameObject.CompareTag("iceDMG") && iceResistance == false)
         {
