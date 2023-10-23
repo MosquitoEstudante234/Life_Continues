@@ -92,15 +92,7 @@ public class PlayerMoviment : MonoBehaviour
 
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f && !isJumping)
         {
-
-            rb.AddForce(Vector2.up * (jumpingPower * jumpingMultiplier), ForceMode2D.Impulse);
-
-            jumpBufferCounter = 0f;
-
-            ReleaseDust();
-
-            StartCoroutine(JumpCooldown());
-            FindObjectOfType<AudioManager>().Play("Pular");
+            Jump();
         }
 
         if (jumpKeyUp && rb.velocity.y > 0)
@@ -127,6 +119,18 @@ public class PlayerMoviment : MonoBehaviour
     private void FixedUpdate()
     {
         Run();
+    }
+
+    private void Jump()
+    {
+        rb.AddForce(Vector2.up * (jumpingPower * jumpingMultiplier), ForceMode2D.Impulse);
+
+        jumpBufferCounter = 0f;
+
+        ReleaseDust();
+
+        StartCoroutine(JumpCooldown());
+        FindObjectOfType<AudioManager>().Play("Pular");
     }
 
     void ReleaseDust()
