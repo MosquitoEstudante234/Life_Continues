@@ -25,7 +25,10 @@ public class PlayerMoviment : MonoBehaviour
     private float coyoteTimeCounter;
 
     private float normalGravity = 1.2f;
-    public float gravityMultiplier;
+    float gravityMultiplier;
+    public float gravityMultiplierValue;
+    public float maxGravityValue;
+
     private float jumpBufferTime = 0.2f;
     private float jumpBufferCounter;
     private bool jumpBufferTokens;
@@ -36,6 +39,7 @@ public class PlayerMoviment : MonoBehaviour
 
     private void Start()
     {
+        gravityMultiplier = gravityMultiplierValue;
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -59,12 +63,18 @@ public class PlayerMoviment : MonoBehaviour
 
         if (rb.velocity.y < 1 && !IsGrounded())
         {
-            rb.gravityScale = normalGravity + (gravityMultiplier += Time.deltaTime * 5);
+            gravityMultiplier =+ gravityMultiplier + Time.deltaTime * 9;
+            rb.gravityScale = normalGravity + gravityMultiplier;
+            if (rb.gravityScale >= maxGravityValue)
+            {
+                gravityMultiplier = maxGravityValue;
+                rb.gravityScale = maxGravityValue;
+            }
         }
 
-        else
+        else if (IsGrounded())
         {
-            gravityMultiplier = 4;
+            gravityMultiplier = gravityMultiplierValue;
             rb.gravityScale = normalGravity;
         }
 
