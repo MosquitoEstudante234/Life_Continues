@@ -1,0 +1,1113 @@
+fileFormatVersion: 2
+guid: 183b793db8985a54d8266a4202887334
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Acid_Castle_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d51516044f62eb4cafe8b4109f5ba6e
+      internalID: -36470824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f829766a0a2a5a46bf8b5aee67db7bd
+      internalID: 1819384642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02c8c5ae67c4f34c8fac8438b2e73a5
+      internalID: -1835743815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6fd0dc95180424ca0ca39386028446
+      internalID: 837964222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a27ecf5dc7a723448e8eb84a3b5ce4b
+      internalID: -1636220653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aea47731cc32b54dbc194f830fbf11c
+      internalID: -1356756864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8553f64669b7243aacf8d2ccc84cb5
+      internalID: -1833980968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5150c5605007f3458896024669cca49
+      internalID: 736911033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fca39cc4c448b8449196d4162d5b05c
+      internalID: -1770783490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf40b63d10ef774785f0ced58e34715
+      internalID: -1503226699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7286cc7fd8d19b4bbbe65d494e97ec7
+      internalID: 35229077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d423963ed5eae248871ecc591479ece
+      internalID: -1677980617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660f3fe3795a9f348921d843e43c942e
+      internalID: -1569384553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8433cd1e76215be4cafdfad56eb3a4ef
+      internalID: 2018138757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360c421bfc074584fb76f1249478e5df
+      internalID: -1079235102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c02a18d763b0044fb8627970cf2d904
+      internalID: -2089579789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee5c899a43c9f84e925a8292e936127
+      internalID: 959745091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8268ef121ebf6dc4daec6193d5340c29
+      internalID: 652194245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bdc47fbd5b01643b6971e7af43c006
+      internalID: -1685268295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_19
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cd8c97a3654264684ae692b1d7d50e
+      internalID: 1168200683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0581766c81bbf4d99969a94a12a8fc
+      internalID: 479126180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5b8084dff955741bc22ad69df10f97
+      internalID: 1115439340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149f2597a1192f245927386046642933
+      internalID: 1546769026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd90176530c6a34d8de17c025c457a5
+      internalID: -1716489551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12193d61f4fb49f48b87ea1f3b764714
+      internalID: -1803589655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcdd95ef8f669041a6e11c84fd99232
+      internalID: -571286636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_26
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011e9848b3492be459118ca175a4a229
+      internalID: -1608404507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2189cf1a69098844197ac251b1727702
+      internalID: 272331170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15df3a8861fb5624eb58cee87e1af7ec
+      internalID: -794083046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_29
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027c3aec08106cb4f93fbc80ca7326c8
+      internalID: 1404535071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cedfed1b4ea23745b80ffd2956475c6
+      internalID: 1240272742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33839f9c2aec28459de904c66d915ff
+      internalID: 2039351516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a83e37c73dfe0b42b2bae1a31ae9172
+      internalID: 1626024827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06291cceac7bc124ca765daf4aaecfaf
+      internalID: 631821202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_34
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14edc963a283bd42a0fcf67dd3c2d39
+      internalID: -428271443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1822e79f537b2ed4597f4ad187ec40df
+      internalID: 1935796497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e2ecc72ce2a949878515f563e4a40
+      internalID: 751005655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f8a3abde664c749a88bfdfddf2a992
+      internalID: 13150555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_38
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8935eb216fcb44abedbddc01b97b05
+      internalID: -256354573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_39
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c39ca4b0a6425c448a366f990299a3f
+      internalID: 833411224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_40
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f4becb1a3437546b053006ddf651c2
+      internalID: 1488265023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_41
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f167338177dce44ac768fd3a95356f
+      internalID: -1237940428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_42
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3066240198133f043945180c8d100ee9
+      internalID: 2020319833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_43
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa75e895a3767a849af0de5cb1555da2
+      internalID: 1654125479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Acid_Castle_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c0377cdccba7d498f701e04537e2a3
+      internalID: -733640634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Acid_Castle_18: -1685268295
+      Acid_Castle_13: 2018138757
+      Acid_Castle_30: 1240272742
+      Acid_Castle_20: 479126180
+      Acid_Castle_44: -733640634
+      Acid_Castle_31: 2039351516
+      Acid_Castle_5: -1356756864
+      Acid_Castle_32: 1626024827
+      Acid_Castle_38: -256354573
+      Acid_Castle_22: 1546769026
+      Acid_Castle_37: 13150555
+      Acid_Castle_4: -1636220653
+      Acid_Castle_7: 736911033
+      Acid_Castle_19: 1168200683
+      Acid_Castle_36: 751005655
+      Acid_Castle_10: 35229077
+      Acid_Castle_21: 1115439340
+      Acid_Castle_29: 1404535071
+      Acid_Castle_33: 631821202
+      Acid_Castle_41: -1237940428
+      Acid_Castle_2: -1835743815
+      Acid_Castle_3: 837964222
+      Acid_Castle_9: -1503226699
+      Acid_Castle_15: -2089579789
+      Acid_Castle_11: -1677980617
+      Acid_Castle_0: -36470824
+      Acid_Castle_27: 272331170
+      Acid_Castle_42: 2020319833
+      Acid_Castle_43: 1654125479
+      Acid_Castle_8: -1770783490
+      Acid_Castle_23: -1716489551
+      Acid_Castle_14: -1079235102
+      Acid_Castle_39: 833411224
+      Acid_Castle_40: 1488265023
+      Acid_Castle_26: -1608404507
+      Acid_Castle_16: 959745091
+      Acid_Castle_1: 1819384642
+      Acid_Castle_25: -571286636
+      Acid_Castle_34: -428271443
+      Acid_Castle_6: -1833980968
+      Acid_Castle_17: 652194245
+      Acid_Castle_24: -1803589655
+      Acid_Castle_35: 1935796497
+      Acid_Castle_12: -1569384553
+      Acid_Castle_28: -794083046
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

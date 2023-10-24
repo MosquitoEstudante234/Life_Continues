@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    
     int Health = 1;
     [SerializeField] public static bool fireResistance = false;
     [SerializeField] public static bool iceResistance = false;
@@ -58,6 +59,7 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("damage");
             Health -= 1;
             FindObjectOfType<AudioManager>().Play("Morte");
+            transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
         }
 
         if (collision.gameObject.CompareTag("iceDMG") && iceResistance == false)
@@ -65,6 +67,7 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("damage");
             Health -= 1;
             FindObjectOfType<AudioManager>().Play("Morte");
+            transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
         }
         if (collision.gameObject.CompareTag("acidDMG") && acidResistance == true)
         {
