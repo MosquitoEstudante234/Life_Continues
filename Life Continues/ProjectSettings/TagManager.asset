@@ -20,6 +20,7 @@ TagManager:
   - Trofeu
   - Ground
   - CheckPoint
+  - Button
   layers:
   - Default
   - TransparentFX
