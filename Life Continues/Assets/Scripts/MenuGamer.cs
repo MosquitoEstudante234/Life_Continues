@@ -15,4 +15,8 @@ public class MenuGamer : MonoBehaviour
         Debug.Log("Saindo...");
     }
 
+    public void ReplayButton()
+    {
+        Time.timeScale = 1;
+    }
 }

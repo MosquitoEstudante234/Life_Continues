@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
     
     int Health = 1;
+    public GameObject DeathMenu, DeadPlayer;
+
     [SerializeField] public static bool fireResistance = false;
     [SerializeField] public static bool iceResistance = false;
     [SerializeField] public static bool acidResistance = false;
@@ -58,16 +59,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("damage");
             Health -= 1;
-            FindObjectOfType<AudioManager>().Play("Morte");
-            transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
+            Mortis();
         }
 
         if (collision.gameObject.CompareTag("iceDMG") && iceResistance == false)
         {
             Debug.Log("damage");
             Health -= 1;
-            FindObjectOfType<AudioManager>().Play("Morte");
-            transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
+            Mortis();
         }
         if (collision.gameObject.CompareTag("acidDMG") && acidResistance == true)
         {
@@ -88,14 +87,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("damage");
             Health -= 1;
-            FindObjectOfType<AudioManager>().Play("Morte");
+            Mortis();
         }
 
         if (collision.gameObject.CompareTag("iceDMG") && iceResistance == false)
         {
             Debug.Log("damage");
             Health -= 1;
-            FindObjectOfType<AudioManager>().Play("Morte");
+            Mortis();
         }
          if (collision.gameObject.CompareTag("acidDMG") && acidResistance == true)
         {
@@ -103,5 +102,16 @@ public class PlayerHealth : MonoBehaviour
             Destroy(collision.gameObject);
             FindObjectOfType<AudioManager>().Play("Quebrar");
         }
+    }
+
+
+
+    void Mortis()
+    {
+        FindObjectOfType<AudioManager>().Play("Morte");
+        DeadPlayer.SetActive(true);
+        DeathMenu.SetActive(true);
+        transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
+        Time.timeScale = 0;
     }
 }

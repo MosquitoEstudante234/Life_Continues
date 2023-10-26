@@ -47,7 +47,7 @@ public class ItemScript : MonoBehaviour
        }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("cena1");
+            transform.position = RespawnPoint;
         }
         if (score == 3)
         {
