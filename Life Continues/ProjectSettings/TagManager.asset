@@ -21,6 +21,7 @@ TagManager:
   - Ground
   - CheckPoint
   - Button
+  - DialogosTriggers
   layers:
   - Default
   - TransparentFX

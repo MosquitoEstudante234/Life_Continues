@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ItemScript : MonoBehaviour
 
 {
+    
     public Text scoreTxt;
     public int score;
     public bool passagem, trues;
@@ -100,7 +101,12 @@ public class ItemScript : MonoBehaviour
             RespawnPoint = transform.position;
             
         }
-        
+
+        if (col.CompareTag("DialogosTriggers") == true)
+        {
+            
+            FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+        }
     }
 
      private void OnTriggerExit2D(Collider2D col)
