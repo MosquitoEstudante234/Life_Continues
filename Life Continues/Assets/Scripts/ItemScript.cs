@@ -77,10 +77,10 @@ public class ItemScript : MonoBehaviour
         }
             if (col.CompareTag("Voides") == true)
             {
-
-                transform.position = RespawnPoint;
-            FindObjectOfType<AudioManager>().Play("Morte");
-        }
+             FindObjectOfType<PlayerHealth>().Mortis();
+            //transform.position = RespawnPoint;
+            //FindObjectOfType<AudioManager>().Play("Morte");
+        }   
           
            if (col.CompareTag("Porta"))
            {

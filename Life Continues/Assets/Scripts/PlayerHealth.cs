@@ -102,16 +102,26 @@ public class PlayerHealth : MonoBehaviour
             Destroy(collision.gameObject);
             FindObjectOfType<AudioManager>().Play("Quebrar");
         }
+
+        if (collision.gameObject.CompareTag("Voides"))
+        {
+            Debug.Log("damage");
+            Health -= 1;
+            Mortis();
+        }
+
     }
 
 
 
-    void Mortis()
+    public void Mortis()
     {
         FindObjectOfType<AudioManager>().Play("Morte");
         DeadPlayer.SetActive(true);
         DeathMenu.SetActive(true);
         transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
-        Time.timeScale = 0;
+        FindObjectOfType<PlayerMoviment>().speed = 0f;
+        FindObjectOfType<PlayerMoviment>().jumpingPower = 0f;
+        //Time.timeScale = 0;
     }
 }
