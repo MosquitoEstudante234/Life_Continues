@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     
     int Health = 1;
-    public GameObject DeathMenu, DeadPlayer;
+    public GameObject DeathMenu, DeadPlayer, IceBerry, FireBerry, AcidBerry;
 
     [SerializeField] public static bool fireResistance = false;
     [SerializeField] public static bool iceResistance = false;
@@ -27,6 +27,9 @@ public class PlayerHealth : MonoBehaviour
             fireResistance = true;
             iceResistance = false;
             acidResistance = false;
+            FireBerry.SetActive(true);
+            IceBerry.SetActive(false);
+            AcidBerry.SetActive(false);
         }
 
 
@@ -35,12 +38,18 @@ public class PlayerHealth : MonoBehaviour
             fireResistance = false;
             iceResistance = true;
             acidResistance = false;
+            FireBerry.SetActive(false);
+            IceBerry.SetActive(true);
+            AcidBerry.SetActive(false);
         }
          if (collision.gameObject.CompareTag("acidFruit"))
         {
             fireResistance = false;
             iceResistance = false;
             acidResistance = true;
+            FireBerry.SetActive(false);
+            IceBerry.SetActive(false);
+            AcidBerry.SetActive(true);
         }
         if (collision.gameObject.CompareTag("StatusRemover"))
         {

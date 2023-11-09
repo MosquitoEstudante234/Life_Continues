@@ -5,6 +5,7 @@ using UnityEngine;
 public class AtivarInicial : MonoBehaviour
 {
     public GameObject ActivatedObj, Collider, Player, Barcoco, Fade;
+    public Animator animator;
 
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -25,6 +26,7 @@ public class AtivarInicial : MonoBehaviour
     {
         ActivatedObj.SetActive(false);
         Player.transform.position = Barcoco.transform.position;
+        animator.SetBool("IsOpen", false);
         Fade.SetActive(true);
     }
 }

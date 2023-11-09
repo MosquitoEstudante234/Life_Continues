@@ -46,14 +46,14 @@ public class ItemScript : MonoBehaviour
                // SavePlayer();
          }
        }
-        if (Input.GetKeyDown(KeyCode.R))
+       /* if (Input.GetKeyDown(KeyCode.R))
         {
             transform.position = RespawnPoint;
-        }
+        }  */
         if (score == 3)
         {
            Destroy(PortaFinal);
-        }
+        }  
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
