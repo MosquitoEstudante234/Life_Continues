@@ -17,7 +17,7 @@ public class PlayerMoviments : MonoBehaviour
     }
     public void Movimento()
     {
-       FindObjectOfType<PlayerMoviment>().speed = 8f;
-        FindObjectOfType<PlayerMoviment>().jumpingPower = 15f;
+       FindObjectOfType<PlayerMoviment>().speed = 20f;
+        FindObjectOfType<PlayerMoviment>().jumpingPower = 18f;
     }
 }

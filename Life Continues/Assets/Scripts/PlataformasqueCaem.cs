@@ -20,10 +20,15 @@ public class PlataformasqueCaem : MonoBehaviour
     {
         if (!EstaGamer)
         {
-            if (Vector2.Distance(transform.position, Point_Aum.position) < 1f) targetPosi = Point_bum.position;
-
-            if (Vector2.Distance(transform.position, Point_bum.position) < 1f) targetPosi = Point_Aum.position;
-
+            if (Vector2.Distance(transform.position, Point_Aum.position) < 1f)
+            {
+                targetPosi = Point_bum.position;
+                
+            }
+            if (Vector2.Distance(transform.position, Point_bum.position) < 0.000000000000000000001f) {
+                targetPosi = Point_Aum.position;
+                    EstaGamer = true;
+            }
             transform.position = Vector2.MoveTowards(transform.position, targetPosi, speed * Time.deltaTime);
 
         } 
