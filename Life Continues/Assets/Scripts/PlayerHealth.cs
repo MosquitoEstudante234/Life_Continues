@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     
     int Health = 1;
-    public GameObject DeathMenu, DeadPlayer, IceBerry, FireBerry, AcidBerry;
+    public GameObject DeathMenu, IceBerry, FireBerry, AcidBerry;
 
     [SerializeField] public static bool fireResistance = false;
     [SerializeField] public static bool iceResistance = false;
@@ -126,7 +126,6 @@ public class PlayerHealth : MonoBehaviour
     public void Mortis()
     {
         FindObjectOfType<AudioManager>().Play("Morte");
-        DeadPlayer.SetActive(true);
         DeathMenu.SetActive(true);
         transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
         FindObjectOfType<PlayerMoviment>().speed = 0f;
