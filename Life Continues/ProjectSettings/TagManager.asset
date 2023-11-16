@@ -23,6 +23,7 @@ TagManager:
   - Button
   - DialogosTriggers
   - Barcoco
+  - Room
   layers:
   - Default
   - TransparentFX
