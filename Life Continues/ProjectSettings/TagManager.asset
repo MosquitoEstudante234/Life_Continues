@@ -24,6 +24,7 @@ TagManager:
   - DialogosTriggers
   - Barcoco
   - Room
+  - ColliderPorta
   layers:
   - Default
   - TransparentFX
