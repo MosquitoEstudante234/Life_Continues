@@ -26,6 +26,7 @@ TagManager:
   - Room
   - ColliderPorta
   - ColliderTutorial
+  - ColliderFinal
   layers:
   - Default
   - TransparentFX
