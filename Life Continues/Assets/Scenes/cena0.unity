@@ -1168,7 +1168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25743505, y: 0.255405}
   m_AnchorMax: {x: 0.78271306, y: 0.5525767}
-  m_AnchoredPosition: {x: -129.9303, y: 161.72913}
+  m_AnchoredPosition: {x: -143, y: 188}
   m_SizeDelta: {x: 195.61511, y: 48.229218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309071012
@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Artista: Daniel \nProgramador: Julio\nGame Designer: Sol Jos\xE9"
+  m_text: "Artista: Daniel \nProgramador: Julio\nGame Designer: Sol Jose"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a85730d0d9afecf4d91de59fd7418a08, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

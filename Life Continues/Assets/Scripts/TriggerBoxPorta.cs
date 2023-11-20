@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerBoxPorta : MonoBehaviour
 {
-    public GameObject BotaoTrigger;
+    public GameObject BotaoTrigger, TutorialPortal;
  
    public void OnTriggerEnter2D(Collider2D col)
    { 
@@ -12,12 +12,20 @@ public class TriggerBoxPorta : MonoBehaviour
     {
       BotaoTrigger.SetActive(true);
     }
-   }
+        if (col.CompareTag("ColliderTutorial"))
+        {
+            TutorialPortal.SetActive(true);
+        }
+    }
    public void OnTriggerExit2D(Collider2D col)
    { 
     if (col.CompareTag("ColliderPorta"))
     {
       BotaoTrigger.SetActive(false);
     }
-   }
+        if (col.CompareTag("ColliderTutorial"))
+        {
+            TutorialPortal.SetActive(false);
+        }
+    }
 }

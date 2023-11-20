@@ -25,6 +25,7 @@ TagManager:
   - Barcoco
   - Room
   - ColliderPorta
+  - ColliderTutorial
   layers:
   - Default
   - TransparentFX
