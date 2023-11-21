@@ -27,6 +27,12 @@ TagManager:
   - ColliderPorta
   - ColliderTutorial
   - ColliderFinal
+  - BiomaProfundezas
+  - BiomaDeserto
+  - BiomaCastelo
+  - BiomaAcido
+  - BiomaFogo
+  - RunaFragment
   layers:
   - Default
   - TransparentFX

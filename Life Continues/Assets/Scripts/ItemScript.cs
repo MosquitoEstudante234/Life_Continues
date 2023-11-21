@@ -17,7 +17,7 @@ public class ItemScript : MonoBehaviour
     public static int level = 0;
     public Vector3 RespawnPoint;
     public GameObject PortaFinal;
-
+    public GameObject RunaFF;
 
 
     private void Start()
@@ -106,6 +106,10 @@ public class ItemScript : MonoBehaviour
         {
             
             FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+        }
+        if (col.CompareTag("RunaFragment"))
+        {
+            RunaFF.SetActive(true);
         }
     }
 
