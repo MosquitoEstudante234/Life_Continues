@@ -16,10 +16,11 @@ public class PlataformaSal : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+     void OnCollisionEnter2D(Collision2D col)
     {
         if (!EstaGamer)
         {
+            col.transform.SetParent(this.transform);
             if (Vector2.Distance(transform.position, Point_Aum.position) < 1f) targetPosi = Point_bum.position;
 
             if (Vector2.Distance(transform.position, Point_bum.position) < 1f) targetPosi = Point_cum.position;
