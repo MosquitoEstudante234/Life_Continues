@@ -8,11 +8,13 @@ public class PlataformasqueCaem : MonoBehaviour
     public Transform Point_Aum, Point_bum;
     public int speed;
     Vector2 targetPosi;
+    public Vector3 RespawnPoint;
 
 
     void Start()
     {
         targetPosi = Point_Aum.position;
+        RespawnPoint = transform.position;
     }
 
     // Update is called once per frame
@@ -20,15 +22,18 @@ public class PlataformasqueCaem : MonoBehaviour
     {
         if (!EstaGamer)
         {
-            if (Vector2.Distance(transform.position, Point_Aum.position) < 1f)
+            if (Vector2.Distance(transform.position, Point_Aum.position) < 0.1f)
             {
-                targetPosi = Point_bum.position;
-                
+              //  targetPosi = Point_bum.position;
+                transform.position = RespawnPoint;
+                EstaGamer = true;
+                targetPosi = Point_Aum.position;
+
             }
-            if (Vector2.Distance(transform.position, Point_bum.position) == -0.000000000000000000001f) {
+           /* if (Vector2.Distance(transform.position, Point_bum.position) < 0.1f) {
                 targetPosi = Point_Aum.position;
                     EstaGamer = true;
-            }
+            }*/
             transform.position = Vector2.MoveTowards(transform.position, targetPosi, speed * Time.deltaTime);
 
         } 
