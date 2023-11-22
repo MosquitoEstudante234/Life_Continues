@@ -14,7 +14,7 @@ public class PlataformasqueCaem : MonoBehaviour
     void Start()
     {
         targetPosi = Point_Aum.position;
-        RespawnPoint = transform.position;
+        RespawnPoint = this.gameObject.transform.position;
     }
 
     // Update is called once per frame
