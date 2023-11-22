@@ -15,8 +15,7 @@ public class PlataformaSal : MonoBehaviour
         targetPosi = Point_Aum.position;
     }
 
-    // Update is called once per frame
-     void OnCollisionEnter2D(Collision2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
         if (!EstaGamer)
         {
@@ -32,13 +31,13 @@ public class PlataformaSal : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, targetPosi, speed * Time.deltaTime);
 
         }
-      
+
 
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
-
-      /*  if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             collision.transform.SetParent(this.transform);
             if (Vector2.Distance(transform.position, Point_Aum.position) < 1f) targetPosi = Point_bum.position;
@@ -50,30 +49,29 @@ public class PlataformaSal : MonoBehaviour
             if (Vector2.Distance(transform.position, Point_dum.position) < 1f) targetPosi = Point_Aum.position;
 
             transform.position = Vector2.MoveTowards(transform.position, targetPosi, speed * Time.deltaTime);
-            
+
         }
 
-        /*  if (collision.CompareTag("Player") && PlayerHealth.iceResistance == true)
-           {
-               collision.transform.SetParent(this.transform);
-               if (Vector2.Distance(transform.position, Point_cum.position) < 1f) targetPosi = Point_dum.position;
-
-               if (Vector2.Distance(transform.position, Point_dum.position) < 1f) targetPosi = Point_cum.position;
-
-               transform.position = Vector2.MoveTowards(transform.position, targetPosi, speed * Time.deltaTime);
-
-         } */ 
-    
-
-}
-     
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && PlayerHealth.iceResistance == true)
         {
-            collision.transform.SetParent(null);
+            collision.transform.SetParent(this.transform);
+            if (Vector2.Distance(transform.position, Point_cum.position) < 1f) targetPosi = Point_dum.position;
+
+            if (Vector2.Distance(transform.position, Point_dum.position) < 1f) targetPosi = Point_cum.position;
+
+            transform.position = Vector2.MoveTowards(transform.position, targetPosi, speed * Time.deltaTime);
+
         }
     }
 
+     private void OnTriggerExit2D(Collider2D collision)
+    {
+       if (collision.CompareTag("Player"))
+      {
+         collision.transform.SetParent(null);
+     }
+     }
+
 }
+
+
