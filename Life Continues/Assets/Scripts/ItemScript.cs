@@ -19,9 +19,13 @@ public class ItemScript : MonoBehaviour
     public GameObject PortaFinal;
     public GameObject RunaFF;
 
+    public GameObject checkpointAtivado;
+
 
     private void Start()
     {
+        
+
         scoremax = 3;
         score = 0;
         scorecomp = 3;
@@ -96,11 +100,13 @@ public class ItemScript : MonoBehaviour
 
                 SceneManager.LoadScene("cena0");
             }
-            if (col.CompareTag("CheckPoint") == true)
-        {
+
+         if (col.CompareTag("CheckPoint"))
+         {
             RespawnPoint = transform.position;
-            
-        }
+            checkpointAtivado.SetActive(true);
+          }
+        
 
         if (col.CompareTag("DialogosTriggers") == true)
         {
@@ -115,6 +121,12 @@ public class ItemScript : MonoBehaviour
 
      private void OnTriggerExit2D(Collider2D col)
      {
+
+        if (col.CompareTag("CheckPoint"))
+        {
+            checkpointAtivado.SetActive(false);
+        }
+
        if (col.CompareTag("Porta"))
         {
             if (col.gameObject == currentTeleporter)

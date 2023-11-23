@@ -8,6 +8,13 @@ public class FrutasDeleite : MonoBehaviour
     public float height = 0.05f;
     public float startY = 3.25f;
 
+   
+
+    private void Start()
+    {
+
+    }
+
     void Update()
     {
         var pos = transform.position;
@@ -19,6 +26,7 @@ public class FrutasDeleite : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            
             Destroy(gameObject);
         }
     }
