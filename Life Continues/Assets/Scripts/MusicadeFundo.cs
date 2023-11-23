@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MusicadeFundo : MonoBehaviour
 {
-   public GameObject Profundezas, Deserto, Fogo, Acido, Castelo;
+   public GameObject Profundezas, Deserto, Fogo, Acido, Castelo, Gelo, Final;
   
-   public void OnTriggerEnter2D(Collider2D col)
+   public void OnTriggerStay2D(Collider2D col)
    {
      if (col.CompareTag("BiomaProfundezas"))
      {
@@ -32,7 +32,17 @@ public class MusicadeFundo : MonoBehaviour
      {
        Castelo.SetActive(true);
      }
-   }
+    
+        if (col.CompareTag("BiomaGelo"))
+        {
+            Gelo.SetActive(true);
+        }
+       
+        if (col.CompareTag("BiomaFinal"))
+        {
+            Final.SetActive(true);
+        }
+    }
     public void OnTriggerExit2D(Collider2D col)
     {
      if (col.CompareTag("BiomaProfundezas"))
@@ -59,5 +69,15 @@ public class MusicadeFundo : MonoBehaviour
      {
        Castelo.SetActive(false);
      }
+    
+        if (col.CompareTag("BiomaGelo"))
+        {
+            Gelo.SetActive(false);
+        }
+      
+        if (col.CompareTag("BiomaFinal"))
+        {
+            Final.SetActive(false);
+        }
     }
 }
