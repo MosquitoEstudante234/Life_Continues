@@ -7,6 +7,8 @@ public class PlayerMoviment : MonoBehaviour
 {
     public ParticleSystem DustParticle;
 
+    public Animator animator;
+
     private float moveInput;
     public float speed = 8f;
     public float deceleration = 8f;
@@ -53,12 +55,14 @@ public class PlayerMoviment : MonoBehaviour
             coyoteTimeCounter = coyoteTime;
             jumpBufferTokens = true;
             rb.gravityScale = 1f;
+            animator.SetBool("IsJumping", false);
 
         }
         else
         {
 
             coyoteTimeCounter -= Time.deltaTime;
+            animator.SetBool("IsJumping", true);
         }
 
         if (rb.velocity.y < 1 && !IsGrounded())
@@ -93,6 +97,7 @@ public class PlayerMoviment : MonoBehaviour
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f && !isJumping)
         {
             Jump();
+            animator.SetBool("IsJumping", true);
         }
 
         if (jumpKeyUp && rb.velocity.y > 0)
@@ -131,6 +136,7 @@ public class PlayerMoviment : MonoBehaviour
 
         StartCoroutine(JumpCooldown());
         FindObjectOfType<AudioManager>().Play("Pular");
+        animator.SetBool("IsJumping", true);
     }
 
     void ReleaseDust()
@@ -141,8 +147,8 @@ public class PlayerMoviment : MonoBehaviour
     private void Run()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
-       
 
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
         float targetSpeed = moveInput * speed;
 
@@ -154,7 +160,7 @@ public class PlayerMoviment : MonoBehaviour
 
         rb.AddForce(movement * Vector2.right);
     }
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
         
