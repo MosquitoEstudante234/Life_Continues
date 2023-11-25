@@ -7,6 +7,11 @@ public class PlayerHealth : MonoBehaviour
     
     int Health = 1;
     public GameObject DeathMenu, IceBerry, FireBerry, AcidBerry;
+    public Animator animator;
+    int normalLayer = 0; // Assumindo que a camada normal Ã© 0
+    int fireLayer = 1;   // Assumindo que a camada de fogo Ã© 1
+    int acidLayer = 2;   // Assumindo que a camada de Ã¡cido Ã© 2
+    int iceLayer = 3;
 
     [SerializeField] public static bool fireResistance = false;
     [SerializeField] public static bool iceResistance = false;
@@ -30,6 +35,10 @@ public class PlayerHealth : MonoBehaviour
             FireBerry.SetActive(true);
             IceBerry.SetActive(false);
             AcidBerry.SetActive(false);
+
+            animator.SetLayerWeight(iceLayer, 0f);
+            animator.SetLayerWeight(fireLayer, 1f);
+            animator.SetLayerWeight(acidLayer, 0f);
         }
 
 
@@ -41,6 +50,10 @@ public class PlayerHealth : MonoBehaviour
             FireBerry.SetActive(false);
             IceBerry.SetActive(true);
             AcidBerry.SetActive(false);
+            
+            animator.SetLayerWeight(iceLayer, 1f);
+            animator.SetLayerWeight(fireLayer, 0f);
+            animator.SetLayerWeight(acidLayer, 0f);
         }
          if (collision.gameObject.CompareTag("acidFruit"))
         {
@@ -50,6 +63,11 @@ public class PlayerHealth : MonoBehaviour
             FireBerry.SetActive(false);
             IceBerry.SetActive(false);
             AcidBerry.SetActive(true);
+
+            animator.SetLayerWeight(normalLayer, 0f);
+            animator.SetLayerWeight(iceLayer, 0f);
+            animator.SetLayerWeight(fireLayer, 0f);
+            animator.SetLayerWeight(acidLayer, 1f);
         }
         if (collision.gameObject.CompareTag("StatusRemover"))
         {
@@ -60,7 +78,7 @@ public class PlayerHealth : MonoBehaviour
 
 
 
-        //caso de errado deleta até as chaves da função.
+        //caso de errado deleta atï¿½ as chaves da funï¿½ï¿½o.
 
 
 
