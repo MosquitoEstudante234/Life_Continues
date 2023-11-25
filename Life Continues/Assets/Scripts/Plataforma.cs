@@ -17,28 +17,27 @@ public class Plataforma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      //  if (Vector2.Distance(transform.position, Point_A.position) < 1f) targetPos = Point_b.position;
+        if (Vector2.Distance(transform.position, Point_A.position) < 1f) targetPos = Point_b.position;
 
-     //   if (Vector2.Distance(transform.position, Point_b.position) < 1f) targetPos = Point_A.position;
+        if (Vector2.Distance(transform.position, Point_b.position) < 1f) targetPos = Point_A.position;
 
-      //  transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
 
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
     
-    if (collision.CompareTag("Player") && PlayerHealth.fireResistance == true)
-        {
-            collision.transform.SetParent(this.transform);
+    
+         /*   collision.transform.SetParent(this.transform);
             if (Vector2.Distance(transform.position, Point_A.position) < 1f) targetPos = Point_b.position;
 
             if (Vector2.Distance(transform.position, Point_b.position) < 1f) targetPos = Point_A.position;
 
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        }
+        
       
-        if (collision.CompareTag("Player") && PlayerHealth.iceResistance == true)
+       /* if (collision.CompareTag("Player") && PlayerHealth.iceResistance == true)
         {
             collision.transform.SetParent(this.transform);
             if (Vector2.Distance(transform.position, Point_A.position) < 1f) targetPos = Point_b.position;
@@ -46,7 +45,7 @@ public class Plataforma : MonoBehaviour
             if (Vector2.Distance(transform.position, Point_b.position) < 1f) targetPos = Point_A.position;
 
             transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
-        }
+        } */
      
     }
 
