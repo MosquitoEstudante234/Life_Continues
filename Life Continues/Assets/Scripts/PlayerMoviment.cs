@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMoviment : MonoBehaviour
 {
+
+
     public ParticleSystem DustParticle;
 
     public Animator animator;
@@ -50,19 +52,26 @@ public class PlayerMoviment : MonoBehaviour
 
         jumpKeyUp = Input.GetButtonUp("Jump");
 
-        if (IsGrounded())
+        if(rb.velocity.y < 0)
         {
-            coyoteTimeCounter = coyoteTime;
-            jumpBufferTokens = true;
-            rb.gravityScale = 1f;
             animator.SetBool("IsJumping", false);
-
+            animator.SetBool("Falling", true);
         }
         else
         {
+            animator.SetBool("Falling", false);
+        }
 
+        if (IsGrounded())
+        {
+            animator.SetBool("Falling", false);
+            coyoteTimeCounter = coyoteTime;
+            jumpBufferTokens = true;
+            rb.gravityScale = 1f;
+        }
+        else
+        {
             coyoteTimeCounter -= Time.deltaTime;
-            animator.SetBool("IsJumping", true);
         }
 
         if (rb.velocity.y < 1 && !IsGrounded())
@@ -97,7 +106,6 @@ public class PlayerMoviment : MonoBehaviour
         if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f && !isJumping)
         {
             Jump();
-            animator.SetBool("IsJumping", true);
         }
 
         if (jumpKeyUp && rb.velocity.y > 0)
@@ -111,9 +119,6 @@ public class PlayerMoviment : MonoBehaviour
             rb.AddForce(Vector2.up * (jumpingPower * jumpingMultiplier), ForceMode2D.Impulse);
 
             coyoteTimeCounter = 0f;
-
-            
-
         }
         
 

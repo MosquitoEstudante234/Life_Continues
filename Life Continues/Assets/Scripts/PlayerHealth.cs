@@ -148,6 +148,5 @@ public class PlayerHealth : MonoBehaviour
         transform.position = FindObjectOfType<ItemScript>().RespawnPoint;
         FindObjectOfType<PlayerMoviment>().speed = 0f;
         FindObjectOfType<PlayerMoviment>().jumpingPower = 0f;
-        //Time.timeScale = 0;
     }
 }
