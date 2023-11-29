@@ -52,6 +52,11 @@ public class PlayerMoviment : MonoBehaviour
 
         jumpKeyUp = Input.GetButtonUp("Jump");
 
+        if (isJumping && rb.velocity.y > 0)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+
         if(rb.velocity.y < 0)
         {
             animator.SetBool("IsJumping", false);
@@ -64,6 +69,7 @@ public class PlayerMoviment : MonoBehaviour
 
         if (IsGrounded())
         {
+            animator.SetBool("IsJumping", false);
             animator.SetBool("Falling", false);
             coyoteTimeCounter = coyoteTime;
             jumpBufferTokens = true;
@@ -141,7 +147,6 @@ public class PlayerMoviment : MonoBehaviour
 
         StartCoroutine(JumpCooldown());
         FindObjectOfType<AudioManager>().Play("Pular");
-        animator.SetBool("IsJumping", true);
     }
 
     void ReleaseDust()
